@@ -1,71 +1,124 @@
 body {
   margin: 0;
   font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
   color: $uoc-corporate;
+  //background-color: #2fa554;
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  justify-items: stretch;
-  align-items: stretch;
-  max-width: 1800px;
-  margin: auto;
+.hidden {
+  display: none;
 }
 
-.item {
-  margin: 0;
-}
-
-.item-title {
-  font-size: 170px;
-  grid-column: span 3;
-  grid-row: span 3;
-}
-
-.item-main-img {
-  grid-column: span 3;
-  grid-row: span 3;
-}
-
-.item-music {
-  grid-column: span 3;
-  background-color: purple;
-}
-
-.item-date {
-  grid-column: 1/-1;
-  background-color: yellow;
-  font-size: 80px;
-}
-
-.item-img {
-  max-height: 200px;
-  grid-column: 1;
-}
-
-.item-set-artists {
-  grid-column: span 2;
+.list {
   padding: 0;
 }
-.item-artist {
+.list__item {
   list-style: none;
-  border: 1px solid blue;
-  border-radius: 4px;
-  padding: 10px 0;
-  background-color: yellow;
 }
 
-.item-tickets {
-  font-size: 100px;
-  color: blue;
-  text-shadow: 2px 2px #ff0000;
-  font-weight: bold;
-  grid-column: 7/-1;
-  grid-row: 5/8;
-  background-image: url("https://image.freepik.com/vector-gratis/hojas-tropicales-fondo-geometrico_23-2148548945.jpg");
-  background-size: cover;
+img {
+  max-width: 200px;
 }
+//Basic Layout for non-Grid supportng browsers
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: #d3fbd8;
+}
+
+.main-content__item {
+  text-align: center;
+  width: 200px;
+  float: left;
+  margin: 10px 20px;
+}
+
+.section--secondary {
+  clear: both;
+  text-align: center;
+  margin: 20px;
+  font-size: 4vw;
+  color: #005acd;
+  //text-shadow: 2px 2px #9fb540;
+  font-weight: bold;
+  background-color: #68edcb;
+  //margin-bottom: 100px;
+  // background-image: url("https://image.freepik.com/vector-gratis/hojas-tropicales-fondo-geometrico_23-2148548945.jpg");
+  // background-size: cover;
+}
+
+@supports (display: grid) {
+  //Undo the basic layout for non-Grid-supporting browsers
+
+  //...
+
+  //Grid:
+  @media screen and (min-width: 768px) {
+  }
+}
+
+// .wrapper {
+//   display: grid;
+//   grid-gap: 20px;
+//   grid-template-columns: repeat(9, 1fr);
+//   grid-template-rows: repeat(9, 1fr);
+//   justify-items: stretch;
+//   align-items: stretch;
+//   max-width: 1800px;
+//   margin: auto;
+// }
+
+// .item {
+//   margin: 0;
+// }
+
+// .item-title {
+//   font-size: 170px;
+//   grid-column: span 3;
+//   grid-row: span 3;
+// }
+
+// .item-main-img {
+//   grid-column: span 3;
+//   grid-row: span 3;
+// }
+
+// .item-music {
+//   grid-column: span 3;
+//   background-color: purple;
+// }
+
+// .item-date {
+//   grid-column: 1/-1;
+//   background-color: yellow;
+//   font-size: 80px;
+// }
+
+// .item-img {
+//   max-height: 200px;
+//   grid-column: 1;
+// }
+
+// .item-set-artists {
+//   grid-column: span 2;
+//   padding: 0;
+// }
+// .item-artist {
+//   list-style: none;
+//   border: 1px solid blue;
+//   border-radius: 4px;
+//   padding: 10px 0;
+//   background-color: yellow;
+// }
+
+// .item-tickets {
+//   font-size: 100px;
+//   color: blue;
+//   text-shadow: 2px 2px #ff0000;
+//   font-weight: bold;
+//   grid-column: 7/-1;
+//   grid-row: 5/8;
+//   background-image: url("https://image.freepik.com/vector-gratis/hojas-tropicales-fondo-geometrico_23-2148548945.jpg");
+//   background-size: cover;
+// }
