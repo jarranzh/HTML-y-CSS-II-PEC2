@@ -1,8 +1,11 @@
 body {
   margin: 0;
   font-family: $font-family-sans-serif;
-  color: $uoc-corporate;
+  //color: $uoc-corporate;
+  color: #0043b1;
   //background-color: #2fa554;
+  background-image: url("https://image.freepik.com/vector-gratis/fondo-confeti_1048-7865.jpg");
+  background-size: cover;
 }
 
 .hidden {
@@ -12,26 +15,36 @@ body {
 .list {
   padding: 0;
 }
+
 .list__item {
   list-style: none;
+  margin: 0;
 }
 
 img {
-  max-width: 200px;
+  max-width: 210px;
 }
 //Basic Layout for non-Grid supportng browsers
 
 .header {
   padding: 20px;
   text-align: center;
-  background-color: #d3fbd8;
+  background-color: rgba(211, 251, 216, 0.65);
 }
 
-.main-content__item {
+.header__image {
+  border-radius: 50%;
+}
+
+.main-item {
   text-align: center;
-  width: 200px;
+  //width: 200px;
   float: left;
   margin: 10px 20px;
+}
+
+.main-item__image {
+  border-radius: 3px;
 }
 
 .section--secondary {
@@ -50,24 +63,70 @@ img {
 
 @supports (display: grid) {
   //Undo the basic layout for non-Grid-supporting browsers
-
+  .main-item {
+    float: none; //Not neccesary because if a Grid item has a float applied, it just ignores the float
+    //width: auto;
+    margin: 0;
+  }
   //...
 
   //Grid:
   @media screen and (min-width: 768px) {
+    .wrapper {
+      display: grid;
+      //grid-gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+      //grid-template-rows: repeat(5, 1fr);
+      //justify-items: stretch;
+      //align-items: stretch;
+      //max-width: 1800px;
+      //margin: auto;
+    }
+
+    .header {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+
+    .section {
+      grid-column: 1/4;
+      grid-row: span 1;
+    }
+
+    .section--secondary {
+      grid-column: 1/-1;
+    }
+
+    .main-item {
+      display: grid;
+      width: 80vw;
+      justify-content: center;
+      //margin: auto;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .reverse {
+      direction: rtl;
+    }
+
+    .main-item__title {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      align-self: center;
+    }
+
+    .main-item__image {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      justify-self: end;
+    }
+
+    .main-item__list {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      align-self: center;
+    }
   }
 }
-
-// .wrapper {
-//   display: grid;
-//   grid-gap: 20px;
-//   grid-template-columns: repeat(9, 1fr);
-//   grid-template-rows: repeat(9, 1fr);
-//   justify-items: stretch;
-//   align-items: stretch;
-//   max-width: 1800px;
-//   margin: auto;
-// }
 
 // .item {
 //   margin: 0;
