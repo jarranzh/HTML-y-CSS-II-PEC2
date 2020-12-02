@@ -17,8 +17,8 @@ body {
 }
 
 .list__item {
-  list-style: none;
   margin: 0;
+  list-style: none;
 }
 
 img {
@@ -37,10 +37,10 @@ img {
 }
 
 .main-item {
-  text-align: center;
-  //width: 200px;
   float: left;
   margin: 10px 20px;
+  text-align: center;
+  //width: 200px;
 }
 
 .main-item__image {
@@ -48,13 +48,13 @@ img {
 }
 
 .section--secondary {
-  clear: both;
-  text-align: center;
   margin: 20px;
+  clear: both;
   font-size: 4vw;
-  color: #005acd;
-  //text-shadow: 2px 2px #9fb540;
   font-weight: bold;
+  color: #005acd;
+  text-align: center;
+  //text-shadow: 2px 2px #9fb540;
   background-color: #68edcb;
   //margin-bottom: 100px;
   // background-image: url("https://image.freepik.com/vector-gratis/hojas-tropicales-fondo-geometrico_23-2148548945.jpg");
@@ -63,6 +63,7 @@ img {
 
 @supports (display: grid) {
   //Undo the basic layout for non-Grid-supporting browsers
+
   .main-item {
     float: none; //Not neccesary because if a Grid item has a float applied, it just ignores the float
     //width: auto;
@@ -99,11 +100,12 @@ img {
 
     .main-item {
       display: grid;
-      width: 80vw;
       justify-content: center;
+      width: 80vw;
       //margin: auto;
       grid-template-columns: repeat(3, 1fr);
     }
+
     .reverse {
       direction: rtl;
     }
