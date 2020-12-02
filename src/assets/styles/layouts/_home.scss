@@ -12,6 +12,18 @@ body {
   display: none;
 }
 
+.navigation {
+  color: white;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
 .list {
   padding: 0;
 }
@@ -21,8 +33,25 @@ body {
   list-style: none;
 }
 
-img {
+.img {
   max-width: 210px;
+}
+
+.img--full-size {
+  width: 100vw;
+}
+
+.img--mid-size {
+  display: block;
+  margin: auto;
+  width: 80vw;
+  margin: auto;
+}
+
+.main-content--secondary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 //Basic Layout for non-Grid supportng browsers
 
