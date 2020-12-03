@@ -2,10 +2,14 @@ body {
   margin: 0;
   font-family: $font-family-sans-serif;
   //color: $uoc-corporate;
-  color: #0043b1;
+  color: $text-color;
   //background-color: #2fa554;
   background-image: url("https://image.freepik.com/vector-gratis/fondo-confeti_1048-7865.jpg");
   background-size: cover;
+}
+
+blockquote {
+  margin-left: 20px;
 }
 
 .hidden {
@@ -47,6 +51,10 @@ body {
   margin: auto;
 }
 
+.article {
+  margin: 0 10px;
+}
+
 .main-content--secondary {
   display: flex;
   flex-wrap: wrap;
@@ -56,8 +64,9 @@ body {
 
 .header {
   padding: 20px;
+  margin-top: 40px;
   text-align: center;
-  background-color: rgba(211, 251, 216, 0.65);
+  background-color: $primary-color;
 }
 
 .header__image {

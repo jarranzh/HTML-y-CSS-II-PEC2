@@ -1,92 +1,102 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>Artists - Music Fest</title>
-  </head>
-  <body>
-    <nav>
-      <a href="/">HOME</a> | <a href="/artistas.html">ARTISTAS</a> |
-      <a href="/">Contacto</a> |
-    </nav>
-    <h1>INFO</h1>
-    <article>
-      <img
-        class="img--full-size"
-        src="./assets/images/people-in-festival.jpg"
-        alt=""
-      />
-      <h2>
-        Después de no haber podido celebrar la edición de MUSIC FEST de 2020,
-        venimos cargados de energía para la edición de 2021
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elit neque,
-        convallis vitae dolor eget, suscipit malesuada sapien. Etiam blandit
-        aliquet metus sit amet elementum. Proin eget lacus eu urna aliquet
-        rhoncus a non mauris. Integer a sem in nisi cursus rutrum in id ipsum.
-        Etiam ac imperdiet tortor. Quisque dictum orci lectus, sit amet molestie
-        orci ullamcorper at. Quisque maximus, nulla eu pulvinar vehicula, elit
-        turpis placerat lectus, nec viverra metus arcu quis augue. Sed ac nisi
-        est. Maecenas quis diam in sapien ornare rutrum. Sed ac neque maximus,
-        consequat quam nec, pharetra velit. Suspendisse sodales eleifend nibh,
-        et tempor neque malesuada non. Suspendisse sed imperdiet mi. Mauris
-        consequat enim vel lorem ullamcorper, quis accumsan nisl posuere. Cras
-        euismod orci lorem, ac volutpat nunc rhoncus sed. Etiam aliquam
-        efficitur auctor.
-      </p>
-      <p>
-        A continuación te presentamos todas las novedades que podrás ver en la edición 2001:
-        <ul>
-          <li>Sistema de reservas
-            <p>Podrás reservar asdfasdfasdfasd asdfads </p>
-          </li>
-          <li>Autobuses lanzadera con capacidad máxima
-            <p>Habilitaremos autobuses lanzadera desde el centro de la ciudad hasta el recinto del festival, y vice versa, para que no tengáis que depender de vehículo propio y tengáis más libertad de movimiento. Estos autobuses estarán disponibles</p>
-          </li>
-          <li>adfasdfa
-            <p><asdfaaa/p>
-          </li>
-        </ul>
-        Cras ipsum velit, tempus et eleifend nec, auctor id dolor. Cras sed
-        tempus nisi. Donec quis lorem scelerisque, lacinia dolor ac, tincidunt
-        mauris. Etiam maximus ipsum a arcu porttitor, ut fringilla elit feugiat.
-        Donec magna odio, elementum in libero vel, tincidunt accumsan tellus.
-        Nam posuere vulputate ipsum, facilisis dapibus magna vestibulum ac.
-        Aliquam feugiat erat erat. In bibendum, purus sed ultricies posuere,
-        justo nunc ornare est, et pellentesque nulla justo eu ante.
-      </p>
-      <p>
-        Aliquam velit diam, finibus fringilla vulputate et, rhoncus eu lorem.
-        Suspendisse mattis ex est. Vestibulum est lorem, cursus a elit at, porta
-        feugiat ante. Fusce ornare blandit laoreet. Integer id ligula dignissim,
-        pellentesque enim vel, molestie ante. Donec vel bibendum neque, sit amet
-        consectetur justo. Praesent ultricies viverra eros. Orci varius natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-        aliquam bibendum ex, nec eleifend dui bibendum eget. Pellentesque
-        tristique sapien sollicitudin, tempor dolor quis, ornare libero. Quisque
-        in quam posuere, sodales erat eu, viverra nulla. Praesent vel sem quis
-        dolor gravida feugiat sed non risus. Quisque molestie metus quis metus
-        lobortis placerat.
-      </p>
-      <blockquote>
-        asdfads
-      </blockquote>
-      <img class="img--mid-size" src="./assets/images/couple-in-concert.jpg" alt="">
-      <p>
-        Mauris a sem eu arcu posuere placerat. Morbi fermentum aliquet dui, et
-        feugiat odio vehicula sed. Aliquam eros ligula, dapibus ut fringilla
-        eget, malesuada quis augue. Suspendisse iaculis, dolor in ultricies
-        placerat, nibh mi blandit sapien, vitae tincidunt dolor neque sed est.
-        Mauris faucibus maximus mi, sit amet faucibus nisi luctus eget. In
-        aliquam pulvinar egestas. Aliquam sed metus a nulla pharetra
-        ullamcorper.
-      </p>
-      <h2>TE ESPERAMOS EN 2021!</h2>
-    </article>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  <!-- do not remove this line! -->
+  <title>Artists - Music Fest</title>
+</head>
+
+<body>
+  <nav>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="/">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/artistas.html">ARTISTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/info.html">INFO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contacto.html">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+  <h1>INFO</h1>
+  <img class="img--full-size" srcset="
+  ./assets/images/people-in-festival.jpg 1075w,
+  ./assets/images/people-in-festival_768.jpg 768w,
+  ./assets/images/people-in-festival_425.jpg 425w"
+    src="./assets/images/people-in-festival_768.jpg" alt="People in festival">
+  <article class="article">
+    <h2>
+      Después de no haber podido celebrar la edición de MUSIC FEST de 2020...
+    </h2>
+    <p>
+      Venimos cargados de energía para la edición de 2021. Porque después de esta época que tanto hemos sufrido a nivel
+      mundial, todos nos merecemos pasarlo bien y disfrutar.
+      Hemos preparado un cartelazo y muchísimas actividades, pensando en vosotros y cuidando todos los detalles pero
+      sin olvidar las medidas de seguridad.
+    </p>
+    <p>
+      A continuación te presentamos todas las novedades que presenta la edición 2001:
+      <ul>
+        <li>Kit de Bienvenida
+          <p>Este año hemos preparado un kit de bienvenida que contiene una mascarilla reutilizable y fabricada con
+            materiales ecológicos, que esperamos uséis durante toda vuestra estancia en el recinto. También habrá un
+            bote individual de gel hidroalcohólico para que no tengáis excusa!</p>
+        </li>
+        <li>Entrada al recinto por horarios
+          <p>A través de la app del festival podrás reservar un slot de 30min de tiempo en el que tendrás que entrar al
+            recinto. Lo hacemos así para evitar aglomeraciones en las entradas del recinto, esperamos que lo entendáis.
+          </p>
+        </li>
+        <li>Autobuses lanzadera con capacidad máxima
+          <p>Habilitaremos autobuses lanzadera desde el centro de la ciudad hasta el recinto del festival, y vice
+            versa, para que no tengáis que depender de vehículo propio y tengáis más libertad de movimiento. Estos
+            autobuses estarán disponibles durante todo el día.</p>
+        </li>
+      </ul>
+    </p>
+    <h2>
+      Y además..
+    </h2>
+    <p>
+      Este año vamos a donar el 10% del importe de cada entrada a la ciencia. Además, cuando compres tu entrada si
+      quieres podrás añadir el importe que quieras y donarlo también.
+    </p>
+    <blockquote cite="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/ciencia-e-innovacion/Paginas/2020/301020-pge-ciencia.aspx#:~:text=El%20presupuesto%20del%20Ministerio%20de,los%203.232%20millones%20de%20euros.">
+      El presupuesto del Ministerio de Ciencia e Innovación ha aumentado la inversión directa en 1.204 millones de
+      euros, un 59,4%, con respecto a 2020, hasta alcanzar los 3.232 millones de euros. Estas cuentas permitirán
+      incrementar los recursos para los Organismos Públicos de Investigación (OPIs), la Agencia Estatal de
+      Investigación y el CDTI, avanzar en la estabilización de la carrera científica, apoyar con nuevas acciones los
+      proyectos empresariales innovadores y reforzar la investigación biosanitaria y en salud pública, entre otras
+      medidas. </blockquote>
+    <p> Queremos seguir contribuyendo a que la ciencia avance y a crear nuevas soluciones.
+    </p>
+    <blockquote>hola</blockquote>
+
+    <img class="img--mid-size" srcset="
+      ./assets/images/couple-in-concert.jpg 1296w,
+      ./assets/images/couple-in-concert_768.jpg 768w,
+      ./assets/images/couple-in-concert_425.jpg 425w"
+      src="./assets/images/couple-in-concert.jpg" alt="Couple in a concert">
+    <p>
+      Mauris a sem eu arcu posuere placerat. Morbi fermentum aliquet dui, et
+      feugiat odio vehicula sed. Aliquam eros ligula, dapibus ut fringilla
+      eget, malesuada quis augue. Suspendisse iaculis, dolor in ultricies
+      placerat, nibh mi blandit sapien, vitae tincidunt dolor neque sed est.
+      Mauris faucibus maximus mi, sit amet faucibus nisi luctus eget. In
+      aliquam pulvinar egestas. Aliquam sed metus a nulla pharetra
+      ullamcorper.
+    </p>
+    <h2>TE ESPERAMOS EN 2021!</h2>
+  </article>
+</body>
+
 </html>
