@@ -5,14 +5,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.scss" />
   <!-- do not remove this line! -->
   <title>Artists - Music Fest</title>
 </head>
 
 <body>
-  <nav>
-    <ul class="nav justify-content-end">
+  <nav class="navigation">
+    <ul class="nav justify-content-center">
       <li class="nav-item">
         <a class="nav-link" href="/">HOME</a>
       </li>
@@ -20,49 +20,58 @@
         <a class="nav-link" href="/artistas.html">ARTISTS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="/info.html">INFO</a>
+        <a class="nav-link navigation__item-active" href="/info.html">INFO</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/contacto.html">CONTACT</a>
       </li>
     </ul>
   </nav>
-  <h1>INFO</h1>
-  <img class="img--full-size" srcset="
-  ./assets/images/people-in-festival.jpg 1075w,
-  ./assets/images/people-in-festival_768.jpg 768w,
-  ./assets/images/people-in-festival_425.jpg 425w"
-    src="./assets/images/people-in-festival_768.jpg" alt="People in festival">
-  <article class="article">
-    <h2>
-      Después de no haber podido celebrar la edición de MUSIC FEST de 2020...
-    </h2>
+  <div class="main-content">
+    <h1>INFORMACIÓN SOBRE EL FESTIVAL</h1>
+    <div class="jumbotron jumbotron-fluid bg-secondary rounded">
+      <div class="container">
+        <h1 class="display-4">Después de no haber podido celebrar la edición de MUSIC FEST de 2020...
+        </h1>
+        <p class="lead"> Venimos cargados de energía para la edición de 2021. Porque después de esta época que tanto
+          hemos sufrido a nivel
+          mundial, todos nos merecemos pasarlo bien y disfrutar.
+          Hemos preparado un cartelazo y muchísimas actividades, pensando en vosotros y cuidando todos los detalles
+          pero
+          sin olvidar las medidas de seguridad.
+        </p>
+      </div>
+    </div>
     <p>
-      Venimos cargados de energía para la edición de 2021. Porque después de esta época que tanto hemos sufrido a nivel
-      mundial, todos nos merecemos pasarlo bien y disfrutar.
-      Hemos preparado un cartelazo y muchísimas actividades, pensando en vosotros y cuidando todos los detalles pero
-      sin olvidar las medidas de seguridad.
-    </p>
-    <p>
-      A continuación te presentamos todas las novedades que presenta la edición 2001:
+      A continuación te presentamos todas las novedades que habrá en la edición 2001 de Music Fest:
       <ul>
-        <li>Kit de Bienvenida
-          <p>Este año hemos preparado un kit de bienvenida que contiene una mascarilla reutilizable y fabricada con
+        <li class="list__item--secondary">Kit de Bienvenida
+          <p class="list__item__inner">Este año hemos preparado un kit de bienvenida que contiene una mascarilla
+            reutilizable y fabricada con
             materiales ecológicos, que esperamos uséis durante toda vuestra estancia en el recinto. También habrá un
             bote individual de gel hidroalcohólico para que no tengáis excusa!</p>
         </li>
-        <li>Entrada al recinto por horarios
-          <p>A través de la app del festival podrás reservar un slot de 30min de tiempo en el que tendrás que entrar al
+        <li class="list__item--secondary">Entrada al recinto por horarios
+          <p class="list__item__inner">A través de la app del festival podrás reservar un slot de 30min de tiempo en el
+            que tendrás que entrar al
             recinto. Lo hacemos así para evitar aglomeraciones en las entradas del recinto, esperamos que lo entendáis.
           </p>
         </li>
-        <li>Autobuses lanzadera con capacidad máxima
-          <p>Habilitaremos autobuses lanzadera desde el centro de la ciudad hasta el recinto del festival, y vice
+        <li class="list__item--secondary">Autobuses lanzadera con capacidad máxima
+          <p class="list__item__inner">Habilitaremos autobuses lanzadera desde el centro de la ciudad hasta el recinto
+            del festival, y vice
             versa, para que no tengáis que depender de vehículo propio y tengáis más libertad de movimiento. Estos
             autobuses estarán disponibles durante todo el día.</p>
         </li>
       </ul>
     </p>
+  </div>
+  <img class="img--full-size" srcset="
+  assets/images/people-in-festival.jpg 1075w,
+  assets/images/people-in-festival_768.jpg 768w,
+  assets/images/people-in-festival_425.jpg 425w"
+    src="assets/images/people-in-festival_768.jpg" alt="People in festival">
+  <div class="main-content">
     <h2>
       Y además..
     </h2>
@@ -79,24 +88,50 @@
       medidas. </blockquote>
     <p> Queremos seguir contribuyendo a que la ciencia avance y a crear nuevas soluciones.
     </p>
-    <blockquote>hola</blockquote>
-
     <img class="img--mid-size" srcset="
-      ./assets/images/couple-in-concert.jpg 1296w,
-      ./assets/images/couple-in-concert_768.jpg 768w,
-      ./assets/images/couple-in-concert_425.jpg 425w"
-      src="./assets/images/couple-in-concert.jpg" alt="Couple in a concert">
-    <p>
-      Mauris a sem eu arcu posuere placerat. Morbi fermentum aliquet dui, et
-      feugiat odio vehicula sed. Aliquam eros ligula, dapibus ut fringilla
-      eget, malesuada quis augue. Suspendisse iaculis, dolor in ultricies
-      placerat, nibh mi blandit sapien, vitae tincidunt dolor neque sed est.
-      Mauris faucibus maximus mi, sit amet faucibus nisi luctus eget. In
-      aliquam pulvinar egestas. Aliquam sed metus a nulla pharetra
-      ullamcorper.
-    </p>
-    <h2>TE ESPERAMOS EN 2021!</h2>
-  </article>
+      assets/images/couple-in-concert.jpg 1296w,
+      assets/images/couple-in-concert_768.jpg 768w,
+      assets/images/couple-in-concert_425.jpg 425w"
+      src="assets/images/couple-in-concert.jpg" alt="Couple in a concert">
+    <h2>¡¡¡TE ESPERAMOS EN 2021!!!</h2>
+  </div>
+  <footer class="footer py-3">
+    <div class="main-content main-content--flex">
+      <img class="footer__img logo" src="assets/images/logo.jpg" />
+      <div class="footer__section">
+        <p class="footer__section__item">© MUSIC FEST</p>
+        <p class="footer__section__item">BARCELONA</p>
+      </div>
+      <div class="nav footer__section">
+        <a class="nav-link" href="/">
+          <i class="fab fa-facebook-f footer__section__item"></i>
+        </a>
+        <a class="nav-link" href="/">
+          <i class="fab fa-twitter footer__section__item"></i>
+        </a>
+        <a class="nav-link" href="/">
+          <i class="fab fa-instagram footer__section__item"></i>
+        </a>
+
+      </div>
+    </div>
+      <nav class="navigation--secondary">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/artistas.html">ARTISTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/info.html">INFO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+  </footer>
 </body>
 
 </html>

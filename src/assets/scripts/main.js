@@ -1,4 +1,4 @@
-/**
+/* 
  * Import dependencies from node_modules
  * see commented examples below
  */
@@ -7,7 +7,7 @@
 // import SomeModule from 'some-node-module';
 import "bootstrap";
 
-/**
+/* 
  * Write any other JavaScript below
  */
 

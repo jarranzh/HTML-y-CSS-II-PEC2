@@ -5,16 +5,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.scss" />
     <!-- do not remove this line! -->
     <title>Music Fest</title>
 </head>
 
 <body>
     <nav class="navigation">
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" href="/">HOME</a>
+                <a class="nav-link navigation__item-active" href="/">HOME</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/artistas.html">ARTISTS</a>
@@ -26,57 +26,87 @@
                 <a class="nav-link" href="/contacto.html">CONTACT</a>
             </li>
         </ul>
-
     </nav>
-    <!-- <a href="https://www.freepik.es/vectores/logo">Vector de Logo creado por catalyststuff - www.freepik.es</a> -->
     <main class="wrapper">
         <header class="header">
-            <img class="header__image item-main-img img" src="https://image.freepik.com/vector-gratis/calendario-octubre-fest-ingenio-libro-planta-ilustracion_75802-60.jpg" />
+            <img class="header__image logo" src="assets/images/logo.jpg" />
             <h1 class="header__title item item-title">MUSIC FEST 2021</h1>
             <p class="header__subtitle item item-date">BARCELONA, JUNIO DE 2021</p>
         </header>
-        <section class="section">
-            <h1 class="hidden">Events</h1>
-            <ul class="main-content list">
-                <li class="main-item list__item">
-                    <h2 class="main-item__title item-music">ELECTRÓNICA</h2>
-                    <img class="main-item__image img" src="https://image.freepik.com/vector-gratis/lindo-astronauta-tocando-musica-electronica-dj-ilustracion-icono-dibujos-animados-auriculares-concepto-icono-tecnologia-ciencia_138676-2113.jpg" />
+        <section class="main-item">
+            <h2 class="main-item__title">ELECTRÓNICA</h2>
+            <img class="main-item__image" src="assets/images/electronica.jpg" />
 
-                    <ul class="main-item__list item-set-artists list">
-                        <li class="list__item item-artist">GRUPO 1</li>
-                        <li class="list__item item-artist">GRUPO 2</li>
-                        <li class="list__item item-artist">GRUPO 3</li>
-                        <li class="list__item item-artist">GRUPO 4</li>
-                    </ul>
-                </li>
-                <li class="main-item list__item reverse">
-                    <h2 class="main-item__title item-music item-rock">ROCK</h2>
-                    <img class="main-item__image img" src="https://image.freepik.com/vector-gratis/lindo-astronauta-escuchando-musica-boombox-cartoon-icon-illustration-concepto-icono-tecnologia-ciencia_138676-2112.jpg" />
-                    <ul class="main-item__list item-set-artists list">
-                        <li class="list__item item-artist">GRUPO 1</li>
-                        <li class="list__item item-artist">GRUPO 2</li>
-                        <li class="list__item item-artist">GRUPO 3</li>
-                        <li class="list__item item-artist">GRUPO 4</li>
-                    </ul>
-                </li>
-                <li class="main-item list__item">
-                    <h2 class="main-item__title item-music">INDIE</h2>
-                    <img class="item main-item__image img" src="https://image.freepik.com/vector-gratis/lindo-astronauta-tocando-guitarra-ilustracion-icono-dibujos-animados-cohetes-concepto-icono-musica-ciencia_138676-2111.jpg"
-                        alt="" />
-                    <ul class="main-item__list item-set-artists list">
-                        <li class="list__item item-artist">GRUPO 1</li>
-                        <li class="list__item item-artist">GRUPO 2</li>
-                        <li class="list__item item-artist">GRUPO 3</li>
-                        <li class="list__item item-artist">GRUPO 4</li>
-                    </ul>
-                </li>
+            <ul class="main-item__list item-set-artists list">
+                <li class="list__item">PENDULUM</li>
+                <li class="list__item">THE PRODIGY</li>
+                <li class="list__item">CHEMICAL BROTHERS</li>
             </ul>
         </section>
-        <section class="section section--secondary">
-            <h2 class="item item-tickets">¡¡TICKETS YA A LA VENTA!!</p>
+        <section class="main-item reverse">
+            <h2 class="main-item__title item-rock">ROCK</h2>
+            <img class="main-item__image" src="assets/images/rock.jpg" />
+            <ul class="main-item__list item-set-artists list">
+                <li class="list__item">ARCTIC MONKEYS</li>
+                <li class="list__item">THE STROKES</li>
+                <li class="list__item">THE KILLERS</li>
+            </ul>
+
+        </section>
+        <section class="main-item">
+            <h2 class="main-item__title">INDIE</h2>
+            <img class="item main-item__image" src="assets/images/indie.jpg" alt="" />
+            <ul class="main-item__list item-set-artists list">
+                <li class="list__item">TWO DOOR CINEMA CLUB</li>
+                <li class="list__item">SAINT MOTEL</li>
+                <li class="list__item">YOUNG THE GIANT</li>
+            </ul>
+
+
+        </section>
+        <section class="main-item--secondary">
+            <h2 class="main-item__title">¡¡TICKETS YA A LA VENTA!!</p>
         </section>
     </main>
-    <script src="./assets/scripts/main.js"></script>
+    <footer class="footer py-3">
+        <div class="main-content main-content--flex">
+            <img class="footer__img logo" src="assets/images/logo.jpg" />
+            <div class="footer__section">
+                <p class="footer__section__item">© MUSIC FEST</p>
+                <p class="footer__section__item">BARCELONA</p>
+            </div>
+            <div class="nav footer__section">
+                <a class="nav-link" href="/">
+                    <i class="fab fa-facebook-f footer__section__item"></i>
+                </a>
+                <a class="nav-link" href="/">
+                    <i class="fab fa-twitter footer__section__item"></i>
+                </a>
+                <a class="nav-link" href="/">
+                    <i class="fab fa-instagram footer__section__item"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <nav class="navigation--secondary">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/artistas.html">ARTISTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/info.html">INFO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacto.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
 </body>
 

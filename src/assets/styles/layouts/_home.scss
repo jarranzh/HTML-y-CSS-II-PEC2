@@ -1,45 +1,112 @@
 body {
   margin: 0;
   font-family: $font-family-sans-serif;
-  //color: $uoc-corporate;
   color: $text-color;
-  //background-color: #2fa554;
-  background-image: url("https://image.freepik.com/vector-gratis/fondo-confeti_1048-7865.jpg");
-  background-size: cover;
+  background-color: $primary-color;
 }
 
 blockquote {
   margin-left: 20px;
 }
 
+.wrapper {
+  background-image: url("https://image.freepik.com/vector-gratis/fondo-confeti_1048-7865.jpg");
+  background-size: cover;
+}
+
 .hidden {
   display: none;
 }
 
+/* ************ */
+
+/* ** CARD *** */
+
+/* ************ */
+
+.card {
+  width: min-content;
+  margin: 10px;
+  border: 1px solid $secondary;
+  border-radius: 5px;
+
+  @media screen and (min-width: 1024px) {
+    margin: 10px 20px;
+  }
+}
+
+.card__body {
+  padding: 10px 20px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card__subtitle {
+  color: $secondary;
+}
+
+.card__description {
+  margin: 0;
+}
+
+/* *********** */
+
+/* * NAVIGATION *** */
+
+/* *********** */
+
 .navigation {
   position: fixed;
+  top: 0;
+  z-index: 1;
   width: 100%;
-  color: white;
+  font-size: 13px;
+  background-color: black;
+
+  @media screen and (min-width: 425px) {
+    font-size: 16px;
+  }
+}
+
+.navigation--secondary {
   background-color: black;
 }
 
-.link {
-  color: white;
-  text-decoration: none;
+.navigation__item-active {
+  border-bottom: 5px solid $primary-color;
 }
 
-.list {
-  padding: 0;
-}
+/* *********** */
+
+/* * lists *** */
+
+/* *********** */
 
 .list__item {
+  padding-bottom: 15px;
   margin: 0;
+  font-weight: bold;
   list-style: none;
 }
 
-.img {
-  max-width: 210px;
+.list__item__inner {
+  font-weight: 400;
 }
+
+.list__item--secondary {
+  font-weight: bold;
+  list-style-type: none;
+}
+
+/* *********** */
+
+/* * IMAGES *** */
+
+/* *********** */
 
 .img--full-size {
   width: 100vw;
@@ -48,19 +115,79 @@ blockquote {
 .img--mid-size {
   display: block;
   width: 80vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: auto;
 }
 
-.article {
-  margin: 0 10px;
+.logo {
+  border-radius: 50%;
 }
 
-.main-content--secondary {
+/* *********** */
+
+/* * LAYOUT *** */
+
+/* *********** */
+
+.main-content {
+  padding: 80px 20px;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 80vw;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 1800px) {
+    width: 1440px;
+    margin: auto;
+  }
+}
+
+.main-content--flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
 }
-//Basic Layout for non-Grid supportng browsers
+
+/* *********** */
+
+/* * FOOTER *** */
+
+/* *********** */
+
+.footer {
+  color: $primary-color;
+  background-color: black;
+}
+
+.footer__section {
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.footer__section__item {
+  margin: 0;
+}
+
+.footer__img {
+  width: 100px;
+
+  @media screen and (min-width: 768px) {
+    width: 150px;
+  }
+}
+
+/* *********** */
+
+/* * HEADER *** */
+
+/* *********** */
 
 .header {
   padding: 20px;
@@ -69,56 +196,63 @@ blockquote {
   background-color: $primary-color;
 }
 
-.header__image {
-  border-radius: 50%;
+.header__title {
+  @media screen and (min-width: 768px) {
+    font-size: 10vw;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 105px;
+  }
 }
 
+/* *********** */
+
+/* * LAYOUT // MAIN ITEM *** */
+
+/* *********** */
+
 .main-item {
-  float: left;
+  padding: 10px;
   margin: 10px 20px;
   text-align: center;
-  //width: 200px;
+  border-top: 1px solid $secondary;
+  border-bottom: 1px solid $secondary;
 }
 
 .main-item__image {
-  border-radius: 3px;
+  border-radius: 15px;
 }
 
-.section--secondary {
-  margin: 20px;
-  clear: both;
-  font-size: 4vw;
-  font-weight: bold;
-  color: #005acd;
-  text-align: center;
-  //text-shadow: 2px 2px #9fb540;
-  background-color: #68edcb;
-  //margin-bottom: 100px;
-  // background-image: url("https://image.freepik.com/vector-gratis/hojas-tropicales-fondo-geometrico_23-2148548945.jpg");
-  // background-size: cover;
+.main-item__title {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 40px;
 }
+
+.main-item__list {
+  font-size: 24px;
+}
+
+.main-item--secondary {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  background-color: $background-secondary;
+}
+
+/* *********** */
+
+/* * GRID *** */
+
+/* *********** */
 
 @supports (display: grid) {
-  //Undo the basic layout for non-Grid-supporting browsers
-
-  .main-item {
-    float: none; //Not neccesary because if a Grid item has a float applied, it just ignores the float
-    //width: auto;
-    margin: 0;
-  }
-  //...
-
-  //Grid:
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .wrapper {
       display: grid;
-      //grid-gap: 20px;
       grid-template-columns: repeat(5, 1fr);
-      //grid-template-rows: repeat(5, 1fr);
-      //justify-items: stretch;
-      //align-items: stretch;
-      //max-width: 1800px;
-      //margin: auto;
+      row-gap: 1rem;
     }
 
     .header {
@@ -126,37 +260,34 @@ blockquote {
       grid-row: 1/2;
     }
 
-    .section {
-      grid-column: 1/4;
-      grid-row: span 1;
-    }
-
-    .section--secondary {
-      grid-column: 1/-1;
-    }
-
     .main-item {
+      grid-column: 2/5;
+      grid-row: span 1;
+
       display: grid;
-      justify-content: center;
-      width: 80vw;
-      //margin: auto;
       grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+
+    .main-item--secondary {
+      grid-column: 1/-1;
+      display: block;
     }
 
     .reverse {
       direction: rtl;
     }
 
+    .main-item__image {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      justify-self: center;
+    }
+
     .main-item__title {
       grid-column: 2/3;
       grid-row: 1/2;
       align-self: center;
-    }
-
-    .main-item__image {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      justify-self: end;
     }
 
     .main-item__list {
@@ -166,57 +297,3 @@ blockquote {
     }
   }
 }
-
-// .item {
-//   margin: 0;
-// }
-
-// .item-title {
-//   font-size: 170px;
-//   grid-column: span 3;
-//   grid-row: span 3;
-// }
-
-// .item-main-img {
-//   grid-column: span 3;
-//   grid-row: span 3;
-// }
-
-// .item-music {
-//   grid-column: span 3;
-//   background-color: purple;
-// }
-
-// .item-date {
-//   grid-column: 1/-1;
-//   background-color: yellow;
-//   font-size: 80px;
-// }
-
-// .item-img {
-//   max-height: 200px;
-//   grid-column: 1;
-// }
-
-// .item-set-artists {
-//   grid-column: span 2;
-//   padding: 0;
-// }
-// .item-artist {
-//   list-style: none;
-//   border: 1px solid blue;
-//   border-radius: 4px;
-//   padding: 10px 0;
-//   background-color: yellow;
-// }
-
-// .item-tickets {
-//   font-size: 100px;
-//   color: blue;
-//   text-shadow: 2px 2px #ff0000;
-//   font-weight: bold;
-//   grid-column: 7/-1;
-//   grid-row: 5/8;
-//   background-image: url("https://image.freepik.com/vector-gratis/hojas-tropicales-fondo-geometrico_23-2148548945.jpg");
-//   background-size: cover;
-// }
